@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="D.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c007a463bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fa-beat" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fa-beat-fade" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi, I'm <span>Disha Basak</span> <br> From Kolkata.</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------ABOUT------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="kolu_phn.png" class="img-pc">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a beginner full-stack web developer, I have a strong passion for creating and building web applications. I possess a solid foundation in front-end development, with proficiency in HTML, CSS, and JavaScript. I take pride in crafting visually appealing and user-friendly interfaces, always mindful of responsive design and accessibility.I'm eager to expand my skill set and delve into back-end development. I am familiar with at least one back-end programming language, such as Node.js, Python, Ruby, MySQL or PHP, and have started exploring the concepts of server-side logic and database management. I also understand the significance of APIs and how they facilitate communication between different parts of a web application.
+                    <p>I'm driven by curiosity, enthusiasm, and a desire to contribute to the ever-evolving world of technology. With dedication and a growth mindset, I am well on my way to becoming a skilled and accomplished full-stack web developer.</p>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Web Developer</span><br>Designing of Frontend & Backend</li>
+                            <li><span>Java Developer</span><br>Designing Web App</li>
+                            <li><span>App Developement</span><br>Designing Android & IOS App</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>First Year</span><br>C Programming</li>
+                            <li><span>Second Year</span><br>DSA & DAA</li>
+                            <li><span>Third Year</span><br>Web Developement</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Seconday Education From BBGHS</li>
+                            <li><span>2019 - 2021</span><br>Higher Seconday Education From PHSPS</li>
+                            <li><span>2021 - Current</span><br>B.Tech From UEMK</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------SERVICES------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2> <i class="fa-solid fa-code"></i> Web Design</h2>
+                    <p>Our web design services aim to elevate your online presence and engage your target audience effectively. We create stunning and user-friendly interfaces that work seamlessly on all devices. With a focus on visual aesthetics and functionality, we craft custom websites that reflect your brand's unique identity. Our designs prioritize readability, loading speed, and responsiveness, ensuring an enjoyable browsing experience for your visitors. Let us transform your ideas into an exceptional website that leaves a lasting impression and drives business growth.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    
+                    <h2> <i class="fa-brands fa-java"></i>  Java Developement</h2>
+                    <p>Java is a powerful and versatile programming language that offers platform independence and object-oriented programming capabilities. With its "write once, run anywhere" philosophy, Java allows developers to build robust and scalable applications for a wide range of devices and platforms. It boasts a vast ecosystem of libraries, frameworks, and tools, making it a popular choice for enterprise-level software development and web applications. Java's strong community support and regular updates ensure its relevance and effectiveness in modern software development.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <h2> <i class="fa-brands fa-app-store"></i> App Developement</h2>
+                    <p>App development involves creating software applications for various platforms, such as mobile, web, or desktop. It encompasses a range of skills, including coding, design, testing, and deployment. From concept to delivery, our app development services focus on user-centric experiences, performance optimization, and adherence to industry standards. We collaborate closely with clients to understand their needs and deliver innovative and functional apps that cater to their target audience, ensuring seamless user interactions and enhanced business outcomes.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------MY WORK------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play store
+                            </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play store
+                            </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play store
+                            </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+            </div>
+
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ------------------CONTACT------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>dishabasak003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8777373893</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/disha-basak-1b7172217/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                        <a href="https://www.facebook.com/dishabasak08/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+                        <a href="https://www.instagram.com/_lucisious_mirimosa_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea rows="6" name="Message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn3 btn2 btn4">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &#169 Disha. Made with <i class="fa-sharp fa-solid fa-heart"></i></p>
+    </div>
+
+</body>
+
+<script defer src="script.js"></script>
+
+<!-- <script>
+
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script> -->
+
+<!-- <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script> -->
+
+<!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw8Hiyh5e9noawznKGdtn77jOD8wMHw3NApnC_TsipC5lEJyw310M8utswSvC0VvZ_c/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById('msg');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!!"
+            setTimeout(function(){
+                msg.innerHTML =" ";
+            },10000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> -->
+</html>
